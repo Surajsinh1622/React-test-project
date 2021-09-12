@@ -1,10 +1,10 @@
 import React from "react"
-import Counter from "./components/counters";
+import Test from "./components/Test";
 
 class App extends React.Component{
 	render(){
 		return<div>
-			<Counter />
+			<Test />
 		</div>
 	}
 }
