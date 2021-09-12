@@ -1,10 +1,10 @@
 import React from "react"
-import Form from "./components/form";
+import Counter from "./components/counters";
 
 class App extends React.Component{
 	render(){
 		return<div>
-			<Form />
+			<Counter />
 		</div>
 	}
 }
