@@ -14,7 +14,7 @@ const Todo = ({title , complated ,remTODO}) => {
             setValue(tempValue);
             setIsEditing(false);
         }
-        else if(key == 27){
+        else if(key === 27){
             setTempValue(value);
             setIsEditing(false);
         }
@@ -25,9 +25,6 @@ const Todo = ({title , complated ,remTODO}) => {
     }
     const handleButtonClick = () => {
         setComplated((oldComplet) => !oldComplet);
-    }
-    const remButtonClick = () => {
-        
     }
 
     return(
@@ -53,7 +50,7 @@ const Todo = ({title , complated ,remTODO}) => {
                         <button type = "" className = {"ui button circular icon" + (complatedState ? " blue" : " green")} onClick = {handleButtonClick}><i className = "white check icon"></i></button>
                     </div>
                     <div className = "column one wide">
-                        <button type = "" onClick = {remButtonClick} className = "ui button circular icon red" ><i className = "white remove icon"></i></button>
+                        <button type = "" onClick = {remTODO} className = "ui button circular icon red" ><i className = "white remove icon"></i></button>
                     </div>
                 </div>
             </div>
